@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookshelfContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- POZADINA POLICE -->
+    <ImageView
+        android:id="@+id/bookshelfBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shelf_wood" />
+
+
+    <!-- DUGME ZA DODAVANJE novih knjiga -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:contentDescription="Dodaj"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/black" />
+
+</FrameLayout>
